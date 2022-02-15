@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="forms.css">
+	<link rel="stylesheet" type="text/css" href="media.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+	<title>Управляющая компания</title>
+</head>
+<body>
+	<div class="body-wrapper" id="section-1-back">
+		<div class="active-background"></div>
+		<div class="body-container">
+			<header class="main-header">
+				<nav class="main-header__menu">
+						<div class="first-logo">
+							<img src="images/logo.png" class="menu-logo">
+						</div>
+						<div class="menu-burger-wrapper burger">
+								<span class="menu-burger-string"></span>
+								<span class="menu-burger-string"></span>
+								<span class="menu-burger-string"></span>
+						</div>
+						<ul class="main-header__menu__list">
+								<li class="main__menu__li"><a href="#section-1-back" class="main-menu__link">Главная</a></li>
+								<li class="main__menu__li"><a href="#section-2-back" class="main-menu__link">О компании</a></li>
+								<li class="main__menu__li"><a href="#section-3-back" class="main-menu__link">Руководство</a></li>
+								<li class="main__menu__li"><a href="#section-4-back" class="main-menu__link">Перечень домов</a></li>	
+								<li class="main__menu__li"><a href="#section-5-back" class="main-menu__link">Контакты</a></li>
+						</ul>
+				</nav>
+			</header>
+			<main class="main">
+				<section class="section-1">
+					<div class="section-1__describe">
+						<p>Управляющая компания</p>
+						<p>"Architech"</p>
+					</div>
+					<button class="section-1_btn">Оставить заявку</button>
+					<div class="section-1-modal">
+						<legend>Заполните заявку</legend>
+						<form method="POST" action="formdata.php" class="form" name="form">
+							<div class="form__fio-wrapper">
+								<input type="text" name="firstName" placeholder="Имя" required id="name">
+								<input type="text" name="secondName" placeholder="Фамилия" required id="secondName">
+								<input type="text" name="thirdName" placeholder="Отчество" required id="thirdName">
+							</div>
+							<input type="email" name="email" placeholder="Электронная почта" id="email">
+							<div class="house-appartment-wrapper">
+								<input type="text" name="numberOfHouse" list="form__houses-list" placeholder="Укажите дом" required id="houseNumber">
+								<datalist id="form__houses-list">
+									<option>Армейская, д. 1</option>
+									<option>Армейская, д. 2</option>
+									<option>Армейская, д. 3</option>
+									<option>Артеллерийская, д.5</option>
+									<option>Артеллерийская, д.3</option>
+									<option>Артеллерийская, д.9</option>
+									<option>Бухглатерская, д. 1</option>
+									<option>Бухглатерская, д. 10</option>
+									<option>Бухглатерская, д. 101</option>
+									<option>Примерная, д.10</option>
+									<option>Примерная, д.30</option>
+									<option>Примерная, д.32</option>
+									<option>Чебуречная, д. 25</option>
+									<option>Чебуречная, д. 31</option>
+									<option>Чебуречная, д. 78</option>
+								</datalist>
+									<input type="number" name="appartmentNumber" placeholder="Номер квартиры" required id="appartmentNumber">
+							</div>
+									<input type="text" name="issue" list="form__issue" placeholder=" Укажите вид работ" required>
+										<datalist id="form__issue">
+											<option>Вентиляция</option>
+											<option>Холодная вода</option>
+											<option>Горячая вода</option>
+											<option>Газоснабжение</option>
+											<option>Отопление</option>
+											<option>Канализация</option>
+											<option>Электроснабжение</option>
+											<option>Конструктивные элементы</option>
+											<option>Отделка</option>
+										</datalist>
+							<textarea name="issue-about" class="form__textarea" placeholder="Опишите ситуацию" required></textarea>
+							<div class="form__button-wrapper">
+								<button type="submit" name="form__button-submit" class="form__button-submit">Отправить заявку</button>
+								<button type="button" name="form__button-close" class="form__button-close">Закрыть</button>
+							</div>
+						</form>
+					</div>
+				</section>
+				<section class="section-2" id="section-2-back">
+					<span id="about-company">О компании</span>
+					<div class="about-company__describe">
+						<span><p>ООО "Группа компаний "АМ" - компания, в состав которой входит 4 организации: ООО "УК "АМ", ООО "УК "Океания", ООО "УК "Мегаполис", ООО "УК "Лайф".ООО «Управляющая компания «АМ» основана в 2008 году, а ООО «Управляющая компания «Океания» в 2011 году. Управляющая компания «АМ» держится в пятерке лидеров среди компаний в сфере ЖКХ в городе Ижевске.</p><p>За время работы на рынке ЖКХ управляющие компании зарекомендовали себя надежными и финансово устойчивыми организациями. Обе компании имеют лицензию на реализацию своей деятельности. По данным Федеральной антимонопольной службы, не входит в реестр недобросовестных поставщиков, по данным Федеральной налоговой службы, в состав исполнительных органов компании не входят дисквалифицированные лица.Основным видом деятельности управляющих компаний является комплексное обслуживание жилых и не жилых зданий.</p><p>«АМ» и «Океания» можно охарактеризовать, как динамично развивающиеся организации. За последние годы увеличилось количество домов под управлением компаний и достигло отметки 98, треть из которых новостройки. Под каждый дом формируется индивидуальный тариф на содержание и ремонт дома.Управляющая компания имеет свой сайт, мобильное приложение, а также аккаунт в социальных сетях и популярных мессенджерах. Таким образом, реализована автоматизация процессов управления и возможность коммуникаций с жильцами. В «АМ» существует горячая линия и услуги паспортного стола.</p></span>
+					</div>
+					<div class="section-2__below-wrapper">
+						<div class="section-2__cards card-1">
+							<img src="images/card-5.jpg">
+							<div id="card-describe">
+									<p>Прозрачный документооборот</p>
+									<p>Здесь Вы можете узнать о лицензиях и отчетах о выполненных работах</p>
+							</div>
+							<button class="card-btn">Отчетная документация</button>
+						</div>
+						<div class="section-2__cards card-1">
+							<img src="images/card-4.jpg">
+							<div id="card-describe">
+									<p>Техническое обслуживание</p>
+									<p>Узнайте, что входит в содережание ОИ, текущий ремонт и капитальный ремонт</p>
+							</div>
+							<button class="card-btn">Перечень выполняемых работ</button>
+						</div>
+						<div class="section-2__cards card-1">
+							<img src="images/card-5.jpg">
+							<div id="card-describe">
+									<p>План текущего и капитального ремонта 2022 г.</p>
+									<p>Узнайте какие виды работ запланированы по Вашему дому</p>
+							</div>
+							<button class="card-btn">Планы на 2022 г.</button>
+						</div>
+					</div>
+					<div class="section-2__buttons">
+						<div class="section-2__buttons__wrapper">
+							<button class="section-2__button button-1">Передать показания</button>
+								<div class="section-2__form-count-modal">
+									<legend>Укажите данные для передачи показаний</legend>
+										<form method="POST" action="formdata2.php" class="form-count" name="form-count">
+										<input type="text" name="count-issue" list="form__count-issue" placeholder="Укажите ресурс" required>
+													<datalist id="form__count-issue">
+														<option>Холодная вода</option>
+														<option>Горячая вода</option>
+														<option>Газоснабжение</option>
+														<option>Отопление</option>
+														<option>Электроснабжение</option>
+													</datalist>
+										<input type="number" name="countNumber" placeholder="Номер лицевого счета" required id="countNumber">
+										<input type="number" name="counts" placeholder="Показания (до запятой)" required id="counts">
+										<div class="form__button-wrapper">
+											<button type="submit" name="form__button-submit" class="form__button-submit">Отправить заявку</button>
+											<button type="button" name="form__button-close" class="form__button-close">Закрыть</button>
+										</div>
+									</form>
+								</div>
+								<button class="section-2__button button-2">Заказать обратный звонок</button>
+								<div class="section-2__form-call-modal">
+									<legend >Укажите номер, на который мы можем перезвонить</legend>
+										<form method="POST" action="formdata3.php" class="form-callback" name="form-callback">
+										<input type="text" name="number-for-callback" placeholder="Укажите номер" required>
+										<input type="text" name="firstName" placeholder="Имя" required id="name">
+										<label id="time-call"> В какое время Вам позвонить?
+										<input type="time" name="time-call-back" placeholder="Когда Вам лучше перезвонить" required id="callBackTime"></label>
+
+										<div class="form__button-wrapper">
+											<button type="submit" name="form__button-submit" class="form__button-submit">Перезвоните мне</button>
+											<button type="button" name="form__button-close" class="form__button-close">Закрыть</button>
+										</div>
+									</form>
+								</div>
+								<button class="section-2__button button-3"><a href="index3.html" target="_blink">Начать сотрудничество</a></button>
+								<button class="section-2__button button-4"><a href="index2.html" target="_blink">Вопрос-ответ</a></button></a>
+							</div>
+					</div>
+						<div class="about-company__describe">
+						<span><p>ООО "Группа компаний "АМ" - компания, в состав которой входит 4 организации: ООО "УК "АМ", ООО "УК "Океания", ООО "УК "Мегаполис", ООО "УК "Лайф".ООО «Управляющая компания «АМ» основана в 2008 году, а ООО «Управляющая компания «Океания» в 2011 году. Управляющая компания «АМ» держится в пятерке лидеров среди компаний в сфере ЖКХ в городе Ижевске.</p><p>За время работы на рынке ЖКХ управляющие компании зарекомендовали себя надежными и финансово устойчивыми организациями. Обе компании имеют лицензию на реализацию своей деятельности. По данным Федеральной антимонопольной службы, не входит в реестр недобросовестных поставщиков, по данным Федеральной налоговой службы, в состав исполнительных органов компании не входят дисквалифицированные лица.Основным видом деятельности управляющих компаний является комплексное обслуживание жилых и не жилых зданий.</p><p>«АМ» и «Океания» можно охарактеризовать, как динамично развивающиеся организации. За последние годы увеличилось количество домов под управлением компаний и достигло отметки 98, треть из которых новостройки. Под каждый дом формируется индивидуальный тариф на содержание и ремонт дома.Управляющая компания имеет свой сайт, мобильное приложение, а также аккаунт в социальных сетях и популярных мессенджерах. Таким образом, реализована автоматизация процессов управления и возможность коммуникаций с жильцами. В «АМ» существует горячая линия и услуги паспортного стола.</p></span>
+					</div>
+				</section>
+				<div id="parallax">
+					
+				</div>
+				<section class="section-3" id="section-3-back">
+					<span id="managment">Руководство</span>
+					<div class="section-3__managment-wrapper">
+						<div class="section-3__boss section-3-blocks">
+							<div class="boss__image-wrapper">
+								<span id="our__boss">Директор</span>
+								<div class="boss__image">
+									<img src="images/elon.jpeg">
+								</div>
+								<div id="boss__dialog">
+									<span>
+										«Я настроен оптимистично по отношению к будущему, но цивилизации не развиваются бесконечно: они взлетают, достигают пика и рушатся. До того, как это произойдет, мы должны сделать жизнь межпланетной»
+										<p>Илон Муск</p>
+									</span>
+								</div>
+							</div>
+							<div class="boss__describe">
+								<span>
+									<p>Свои первые $500 Маск заработал в возрасте 12 лет, продав видеоигру собственной разработки под названием Blastar, а полученные деньги вложил в акции фармацевтической компании. Продав их, Маск смог после развода родителей уехать из ЮАР в Канаду, где учился какое-то время до перевода в Пенсильванский университет. <p><p>Там он получил степени бакалавра по физике и экономике, а позже поступил в Стэнфорд, который бросил, не проучившись и недели, чтобы начать свое дело: Маск вместе с братом Кимбалом открыли компанию Zip2 Corporation. Она предлагала программное обеспечение для новостных фирм и была позже продана американской компании по производству персональных компьютеров Compaq.</p>
+								</span>
+							</div>
+						</div>
+						<div class="section-3__other-people section-3-blocks">
+							<span id="our__workers">Наши сотрудники</span>
+							<div class="workers worker-1">
+								<img src="images/worker-1.jpg">
+								<span>
+									<ul>
+										<li>Пельменишна Ольга Леонидовна</li>
+										<li>Главный бухгалтер</li>
+										<li>Тел.: +79508295651</li>
+										<li>Эл.почта: pavel3787@mail.ru</li>
+										<li>Приемные дни: пн, ср, пт.</li>
+										<li>Время приема: 16:00-17:00</li>
+									</ul>
+								</span>
+							</div>
+							<div class="workers worker-2">
+								<img src="images/worker-1.jpg">
+								<span>
+									<ul>
+										<li>Ананасова Мария Петровна</li>
+										<li>Не главный бухгалтер</li>
+										<li>Тел.: +79508295651</li>
+										<li>Эл.почта: pavel3787@mail.ru</li>
+										<li>Приемные дни: пн, ср, пт.</li>
+										<li>Время приема: 16:00-17:00</li>
+									</ul>
+								</span>
+							</div>
+							<div class="workers worker-3">
+								<img src="images/worker-1.jpg">
+								<span>
+									<ul>
+										<li>Яблочкин Леонид Аркадьевич</li>
+										<li>Главный энергетик</li>
+										<li>Тел.: +79508295651</li>
+										<li>Эл.почта: pavel3787@mail.ru</li>
+										<li>Приемные дни: пн, ср, пт.</li>
+										<li>Время приема: 16:00-17:00</li>
+									</ul>
+								</span>
+							</div>
+							<div class="workers worker-4">
+								<img src="images/worker-1.jpg">
+								<span>
+									<ul>
+										<li>Сидоров Макар Престолович</li>
+										<li>Главный инженер</li>
+										<li>Тел.: +79508295651</li>
+										<li>Эл.почта: pavel3787@mail.ru</li>
+										<li>Приемные дни: пн, ср, пт.</li>
+										<li>Время приема: 16:00-17:00</li>
+									</ul>
+								</span>
+							</div>
+							<div class="workers worker-5">
+								<img src="images/worker-1.jpg">
+									<ul>
+										<li>Апельсинов Зам Заместилович</li>
+										<li>Заместитель директора</li>
+										<li>Тел.: +79508295651</li>
+										<li>Эл.почта: pavel3787@mail.ru</li>
+										<li>Приемные дни: пн, ср, пт.</li>
+										<li>Время приема: 16:00-17:00</li>
+										<li>Эл.почта: pavel3787@mail.ru</li>
+										<li>Приемные дни: пн, ср, пт.</li>
+										<li>Время приема: 16:00-17:00</li>
+									</ul>
+							</div>
+							<div class="workers worker-6">
+								<img src="images/worker-1.jpg">
+								<span>
+									<ul>
+										<li>Инженеров Инжир Инжирович</li>
+										<li>Инженер по эксплуатации</li>
+										<li>Тел.: +79508295651</li>
+									</ul>
+								</span>
+							</div>
+							<div class="workers worker-7">
+								<img src="images/worker-1.jpg">
+								<span>
+									<ul>
+										<li>Хочов Попасть Вайтинович</li>
+										<li>Инженер по эксплуатации</li>
+										<li>Тел.: +79508295651</li>
+									</ul>
+								</span>
+							</div>
+							<div class="workers worker-8">
+								<img src="images/worker-1.jpg">
+								<span>
+									<ul>
+										<li>Анисимов Андрей Вениаминович</li>
+										<li>Инженер по техническому надзору</li>
+										<li>Тел.: +79508295651</li>
+										<li>Эл.почта: pavel3787@mail.ru</li>
+										<li>Приемные дни: пн, ср, пт.</li>
+										<li>Время приема: 16:00-17:00</li>
+									</ul>
+								</span>
+							</div>
+							<div class="workers worker-9">
+								<img src="images/worker-1.jpg">
+								<span>
+									<ul>
+										<li>Бутербродов Евгений Юрьевич</li>
+										<li>Инженер по техническому надзору</li>
+										<li>Тел.: +79508295651</li>
+										<li>Эл.почта: pavel3787@mail.ru</li>
+										<li>Приемные дни: пн, ср, пт.</li>
+										<li>Время приема: 16:00-17:00</li>
+									</ul>
+								</span>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section-4" >
+					<div class="section-4-wrapper" id="section-4-back">
+						<span id="section-4__about">Узнайте к какому участку относится Ваш дом</span>
+						<div class="slider-wrapper" >
+							<div class="item-sliders slide-1 visible">
+								<div class="slider-content slider-1-content">
+									<h1>Участок №1</h1>
+									<h3>
+										<p>г. Ижевск, ул. Красногеройская, д. 324, оф.2</p>
+										<p>Телефон диспетчера: +7383 391 8282</p>
+										<p>Телефон приемной: +7383 333 9387</p>
+									</h3>
+									<ul class="slider__house-list">
+										<li>Армейская д.31</li>
+										<li>Армейская д.35</li>
+										<li>Армейская д.311</li>
+										<li>Армейская д.323</li>
+										<li>Чебуречная д.3</li>
+										<li>Чебуречная д.31</li>
+										<li>Чебуречная д.32</li>
+										<li>Чебуречная д.33</li>
+										<li>Чебуречная д.34</li>
+										<li>Чебуречная д.35</li>
+										<li>Чебуречная д.38</li>
+										<li>Мандариновая д.1</li>
+										<li>Мандариновая д.29</li>
+										<li>Мандариновая д.31</li>
+										<li>Мандариновая д.33</li>
+										<li>Мандариновая д.44</li>
+										<li>Мандариновая д.48</li>
+										<li>Милиционная д.3</li>
+										<li>Милиционная д.12</li>
+										<li>Милиционная д.13</li>
+										<li>Алтайская д.91</li>
+										<li>Карла Либкнехта д.34</li>
+										<li>Карла Либкнехта д.35</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item-sliders slide-2">
+								<div class="slider-content slider-2-content">
+									<h1>Участок №2</h1>
+									<h3>
+										<p>г. Ижевск, ул. Малазийская, д. 4, оф.23</p>
+										<p>Телефон диспетчера: +7311 344 3112</p>
+										<p>Телефон приемной: +7334 333 1127</p></h3>
+									<ul class="slider__house-list">
+										<li>Армейская д.31</li>
+										<li>Армейская д.35</li>
+										<li>Армейская д.311</li>
+										<li>Армейская д.323</li>
+										<li>Чебуречная д.3</li>
+										<li>Чебуречная д.31</li>
+										<li>Чебуречная д.32</li>
+										<li>Чебуречная д.33</li>
+										<li>Чебуречная д.34</li>
+										<li>Чебуречная д.35</li>
+										<li>Чебуречная д.38</li>
+										<li>Мандариновая д.1</li>
+										<li>Мандариновая д.29</li>
+										<li>Мандариновая д.31</li>
+										<li>Мандариновая д.33</li>
+										<li>Мандариновая д.44</li>
+										<li>Мандариновая д.48</li>
+										<li>Милиционная д.3</li>
+										<li>Милиционная д.12</li>
+										<li>Милиционная д.13</li>
+										<li>Алтайская д.91</li>
+										<li>Карла Либкнехта д.34</li>
+										<li>Карла Либкнехта д.35</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item-sliders slide-3">
+								<div class="slider-content slider-3-content">
+									<h1>Участок №3</h1>
+									<h3>
+										<p>г. Ижевск, ул. Петропалвоваская, д. 1, оф.2</p>
+										<p>Телефон диспетчера: +551 35561 22</p>
+										<p>Телефон приемной: +722 221 53313</p>
+									</h3>
+									<ul class="slider__house-list">
+										<li>Армейская д.31</li>
+										<li>Армейская д.35</li>
+										<li>Армейская д.311</li>
+										<li>Армейская д.323</li>
+										<li>Чебуречная д.3</li>
+										<li>Чебуречная д.31</li>
+										<li>Чебуречная д.32</li>
+										<li>Чебуречная д.33</li>
+										<li>Чебуречная д.34</li>
+										<li>Чебуречная д.35</li>
+										<li>Чебуречная д.38</li>
+										<li>Мандариновая д.1</li>
+										<li>Мандариновая д.29</li>
+										<li>Мандариновая д.31</li>
+										<li>Карла Либкнехта д.34</li>
+										<li>Карла Либкнехта д.35</li>
+										<li>Карла Либкнехта д.36</li>
+										<li>Карла Либкнехта д.37</li>
+										<li>Чебуречная д.38</li>
+										<li>Мандариновая д.1</li>
+								
+									</ul>
+								</div>
+							</div>
+							<div class="item-sliders slide-4">
+								<div class="slider-content slider-4-content">
+									<h1>Участок №4</h1>
+									<h3>
+										<p>г. Ижевск, ул. Сицилийская д. 92 оф. 3</p>
+										<p>Телефон диспетчера: +7383 4343 1</p>
+										<p>Телефон приемной: +7434 134317</p></h3>
+									<ul class="slider__house-list">
+										<li>Армейская д.31</li>
+										<li>Армейская д.35</li>
+										<li>Армейская д.311</li>
+										<li>Армейская д.323</li>
+										<li>Чебуречная д.3</li>
+										<li>Чебуречная д.31</li>
+										<li>Чебуречная д.32</li>
+										<li>Чебуречная д.33</li>
+										<li>Чебуречная д.34</li>
+										<li>Чебуречная д.35</li>
+										<li>Чебуречная д.38</li>
+										<li>Мандариновая д.1</li>
+										<li>Мандариновая д.29</li>
+										<li>Мандариновая д.31</li>
+										<li>Мандариновая д.33</li>
+										<li>Мандариновая д.44</li>
+										<li>Мандариновая д.48</li>
+										<li>Милиционная д.3</li>
+										<li>Милиционная д.12</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item-sliders slide-5">
+								<div class="slider-content slider-5-content">
+									<h1>Участок №5</h1>
+									<h3>
+										<p>г. Ижевск, ул. Хочувайтипопастская д. 1 оф.1</p>
+										<p>Телефон диспетчера: +7383123444</p>
+										<p>Телефон приемной: +743311346</p></h3>
+									<ul class="slider__house-list">
+										<li>Армейская д.31</li>
+										<li>Армейская д.35</li>
+										<li>Армейская д.311</li>
+										<li>Армейская д.323</li>
+										<li>Чебуречная д.3</li>
+										<li>Чебуречная д.31</li>
+										<li>Чебуречная д.32</li>
+										<li>Чебуречная д.33</li>
+										<li>Чебуречная д.34</li>
+										<li>Чебуречная д.35</li>
+										<li>Чебуречная д.38</li>
+										<li>Мандариновая д.1</li>
+										<li>Мандариновая д.29</li>
+										<li>Мандариновая д.31</li>
+										<li>Мандариновая д.33</li>
+										<li>Мандариновая д.44</li>
+										<li>Мандариновая д.48</li>
+										<li>Милиционная д.3</li>
+										<li>Милиционная д.12</li>
+										<li>Милиционная д.13</li>
+										<li>Алтайская д.91</li>
+										<li>Карла Либкнехта д.34</li>
+										<li>Карла Либкнехта д.35</li>
+									</ul>
+								</div>
+							</div>
+							</div>
+						<button class="slider_btn"><img src="images/arrow.png"></button>
+								
+					</div>
+				</section>
+			</main>
+			<footer class="footer" id="section-5-back">
+				<div class="footer-wrapper">
+					<div class="footer__items footer__item-1">
+						<img src="images/logo.png" class="footer-logo">
+					</div>
+					<div class="footer__items footer__item-2">
+						<ul>
+							<li>Контакты:</li>
+							<li>Головной офис: г. Ижевск, ул. Великолепная, д. 33 оф.1</li>
+							<li>Телефон диспетчерской: +7314234536</li>
+							<li>Телефон приемной: +73412564731</li>
+							<li>Телефон аварийно-диспетчерской службы: +7392012341</li>
+							<li>Время работы: 08:00-17:00 (с 12:00 до 13:00 обеденный перерыв)</li>
+							<li>Электронная почта: pavel3787@mail.ru</li>
+						</ul>
+					</div>
+					<div class="footer__items footer__item-3">
+						<ul class="footer__soc-logo-list">
+							<li>Мы в социальных сетях:</li>
+							<li id="facebook">
+								<a href="https://www.facebook.com/" target="_blink"><img src="images/logo/fb-logo.png" alt="facebook-icon" class="footer-soc facebook"></a>
+							</li>
+							<li>
+								<a href="https://twitter.com/" target="_blink"><img src="images/logo/twitter-logo.png" alt="twitter-icon" class="footer-soc"></a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com" target="_blink"><img src="images/logo/insta-logo.png" alt="instagram-logo" class="footer-soc"></a>
+							</li>
+							<li>
+								<a href="https://vk.com" target="_blink"><img src="images/logo/vk-logo.png" alt="vkontakte-logo" class="footer-soc"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
